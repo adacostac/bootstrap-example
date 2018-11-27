@@ -1,5 +1,80 @@
+html {
+  font-size: 15px;
+}
+
 /*Estilos bloques bienvenidos*/
 menuprincipal {
-  clear: both; }
+  clear: both; 
+}
 
-/*# sourceMappingURL=estilos.css.map */
+.bienvenidos {
+  background: url("../images/fondo-bienvenidos.jpg");
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fixed-top {
+  background: rgba(0, 0, 0, 0.60);
+}
+
+.navbar-light .navbar-brand {
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand:focus {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-toggler {
+  font-size: 1.6rem;
+}
+
+.navbar-light .navbar-toggler  .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  color: rgba(255, 255, 255, 0.9);
+  background: #F05F40;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255);
+  background: #F05F40;
+}
+
+.texto-bienvenido {
+  color: #fff;
+  margin-top: 6rem;
+}
+
+.btn-primary {
+  background-color: #F05F40;
+  border-color: #A73A23;
+  transition: all .5s ease;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background-color: #ef7459;
+  border-color: #A73A23;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  background-color: #EF7459;
+  border-color: #A73A23;
+}
+
+/* Estilo bloque Quienes somos*/
+.quienes-somos {
+  background: #F05F40;
+  color: #fff;
+}
