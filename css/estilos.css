@@ -3,10 +3,6 @@ html {
 }
 
 /*Estilos bloques bienvenidos*/
-menuprincipal {
-  clear: both; 
-}
-
 .bienvenidos {
   background: url("../images/fondo-bienvenidos.jpg");
   background-size: cover;
@@ -39,6 +35,9 @@ menuprincipal {
 .navbar-light .navbar-nav .nav-link {
   color: rgb(255, 255, 255);
   text-align: center;
+  padding: .4rem;
+  text-transform: uppercase;
+  transition: all 1s ease;
 }
 
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
@@ -53,7 +52,7 @@ menuprincipal {
 
 .texto-bienvenido {
   color: #fff;
-  margin-top: 6rem;
+  margin-top: 9rem;
 }
 
 .btn-primary {
@@ -78,3 +77,56 @@ menuprincipal {
   background: #F05F40;
   color: #fff;
 }
+
+/* Estilo bloque servicios*/
+.servicios h3 {
+  font-weight: bold;
+}
+
+.servicios .fas {
+    color: #F05F40;
+    font-size: 6rem;
+}
+
+/* Bloque últimos proyectos */
+.ultimos-proyectos {
+  background: #424141;
+  color: #fff;
+}
+
+.ultimos-proyectos img {
+  margin-bottom: 1.5rem;
+  transition: all .3s ease;
+  min-width: 100%;
+}
+
+.ultimos-proyectos a {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.ultimos-proyectos a:hover img {
+  transform: scale(1.5);
+}
+
+/* Estilos bloque pie de pagina */
+.footer {
+  color: #fff;
+  background: #222222;
+}
+
+/* Empiezas los media queries*/
+
+@media(min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .bienvenidos {
+    background: url("../images/fondo-bienvenido-grande.jpg");
+    background-size: cover;
+
+  }
+}
+
+
